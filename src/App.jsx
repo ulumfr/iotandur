@@ -11,6 +11,8 @@ import ResetPage from "./pages/auth/reset";
 import NotFoundPage from "./pages/notfound";
 import TransactionPage from "./pages/transaction/transaction";
 import AboutPage from "./pages/about/about";
+import ProductPage from "./pages/product/product";
+import ProductDetailPage from "./pages/product/detail/detail";
 
 const DefaultLayout = ({ children }) => (
   <div>
@@ -59,8 +61,8 @@ function App() {
           <Route path="reset" element={<ResetPage />} />
         </Route>
 
-        <Route path="/product" element={<NotFoundPage />} />
-        <Route path="/product/detail/:id" element={<NotFoundPage />} />
+        <Route path="/product" element={<ProductPage />} />
+        <Route path="/product/detail" element={<ProductDetailPage />} />
         <Route path="/product/transaction/" element={<TransactionPage />} />
       </Routes>
     </>

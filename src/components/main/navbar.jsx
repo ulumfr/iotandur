@@ -62,7 +62,7 @@ const NavBar = () => {
               <img src={Logo} alt="logo" draggable="false" className="h-6" />
             </Link>
             <div className="hidden md:block pr-10">
-              <ul className="flex space-x-6">
+              <ul className="flex space-x-3">
                 {dataNav.map(({ name, linkMenu }) => (
                   <div key={name}>
                     <NavLink to={linkMenu}>
@@ -134,11 +134,11 @@ const NavBar = () => {
             <ul className="py-5 text-lg space-y-3">
               {dataNav.map(({ name, linkMenu }) => (
                 <div key={name}>
-                  <Link to={linkMenu}>
+                  <NavLink to={linkMenu}>
                     <h1 className="py-5 px-2 cursor-pointer font-semibold text-ijoMuda hover:text-ijoTua hover:font-bold">
                       {name}
                     </h1>
-                  </Link>
+                  </NavLink>
                 </div>
               ))}
             </ul>

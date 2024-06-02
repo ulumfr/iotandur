@@ -12,7 +12,7 @@ export const dataNav = [
   {
     id: 3,
     name: "Produk",
-    linkMenu: "/produk",
+    linkMenu: "/product",
   },
   {
     id: 4,

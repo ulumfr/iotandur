@@ -1,11 +1,32 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import CardTeam from "../../components/about/cardteam";
 import { dataAboutTeam } from "../../dummydata/about/dataabout";
+import TextInputComponent from "../../components/auth/textinput";
+import ButtonComponent from "../../components/auth/button";
 
 const AboutPage = () => {
   useEffect(() => {
     document.title = "IoTandur | Tentang Kami";
   }, []);
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Terkirim Pesan");
+  };
 
   return (
     <>
@@ -51,12 +72,20 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
+      </div>
 
-        <div className="flex justify-center">
+      <div className="bg-cream2 relative overflow-hidden">
+        <div className="absolute bottom-0 left-0 transform translate-x-[-50%] translate-y-[50%] w-[393px] h-[393px] rounded-full bg-cream" />
+        <div className="absolute top-0 left-[5%] transform  translate-y-[-60%] w-[393px] h-[393px] rounded-full bg-cream" />
+        <div className="absolute top-0 right-0 transform translate-x-[20%] translate-y-[-20%] w-[269px] h-[269px] rounded-full bg-cream" />
+        <div className="absolute bottom-0 right-0 transform translate-x-[50%] translate-y-[50%] w-[269px] h-[269px] rounded-full bg-cream" />
+        <div className="absolute bottom-0 right-[35%] transform translate-y-[-30%] w-[269px] h-[269px] rounded-full bg-cream" />
+        <div className="flex justify-center mx-[50px] md:mx-[150px] py-[95px] relative z-10">
           <div className="flex flex-col justify-center items-center">
             <h1 className="text-ijoTua font-semibold text-4xl mb-[81px]">
               Temui Tim Kami
             </h1>
+
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-[35px]">
               {dataAboutTeam.map((about, index) => (
                 <CardTeam
@@ -72,6 +101,51 @@ const AboutPage = () => {
               ))}
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-10 mx-[50px] md:mx-[150px] my-20">
+        <div className="flex flex-col gap-3">
+          <h1 className="text-ijoTua font-semibold text-3xl">Contact Us</h1>
+          <p className="text-textLabel">
+            Jika Anda memiliki pertanyaan atau masukan, jangan ragu untuk
+            menghubungi kami. Kami selalu siap untuk mendengar dari Anda!
+          </p>
+        </div>
+        <div>
+          <form onSubmit={handleSubmit}>
+            <TextInputComponent
+              htmlFor="name"
+              label="Nama"
+              type="text"
+              placeholder="Masukan Nama"
+              name="name"
+              id="name"
+              value={formData.name}
+              onChange={handleChange}
+            />
+            <TextInputComponent
+              htmlFor="email"
+              label="Email"
+              type="email"
+              placeholder="Masukan Email"
+              name="email"
+              id="email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+            <TextInputComponent
+              htmlFor="message"
+              label="Pesan"
+              type="textarea"
+              placeholder="Masukan Pesan"
+              name="message"
+              id="message"
+              value={formData.message}
+              onChange={handleChange}
+            />
+            <ButtonComponent nameButton="Kirim" />
+          </form>
         </div>
       </div>
     </>
