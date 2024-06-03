@@ -50,8 +50,8 @@ const NavBar = () => {
       } z-50`}
     >
       <div className="mx-[50px] md:mx-[150px] py-2">
-        <div className="grid grid-cols-2 items-center h-[74px]">
-          <div className="flex items-center justify-between">
+        <div className="grid grid-cols-2 md:grid-cols-3 items-center h-[74px]">
+          <div className="flex items-center">
             <Link
               to="hero"
               className="flex-shrink-0 cursor-pointer"
@@ -61,6 +61,7 @@ const NavBar = () => {
             >
               <img src={Logo} alt="logo" draggable="false" className="h-6" />
             </Link>
+          </div>
             <div className="hidden md:block pr-10">
               <ul className="flex space-x-6">
                 {dataNav.map(({ name, linkMenu }) => (
@@ -74,7 +75,6 @@ const NavBar = () => {
                 ))}
               </ul>
             </div>
-          </div>
           <div className="hidden md:flex justify-end gap-4 p-4">
             {isLoggedIn ? (
               <>
