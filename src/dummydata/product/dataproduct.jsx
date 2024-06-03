@@ -16,7 +16,7 @@ export const dataProduct = [
     harga: "Rp 5.000.000",
     spesifikasi: "Ukuran: 20x30x10 cm, Berat: 1.5 kg, Kapasitas: 50 tanaman",
     panduan:
-      "1. Pasang sensor pada lahan.\n2. Hubungkan dengan aplikasi mobile.\n3. Pantau kondisi tanaman melalui aplikasi.",
+      "1. Cek setiap sensor setiap 2 bulan sekali, bersihkan jika ada kotoran jika ada.\n2. ⁠Cek setiap jalur kabel setiap 3 bulan sekali, guna memastikan tidak ada yang terputus",
     link: "/product/detail/1",
   },
   {
@@ -30,7 +30,7 @@ export const dataProduct = [
     harga: "Rp 6.000.000",
     spesifikasi: "Ukuran: 25x35x12 cm, Berat: 2 kg, Kapasitas: 100 tanaman",
     panduan:
-      "1. Tempatkan kamera pemantau di kebun.\n2. Instal aplikasi analitik di smartphone.\n3. Monitor perkembangan buah secara real-time.",
+      "1. Cek setiap sensor setiap 2 bulan sekali, bersihkan jika ada kotoran jika ada.\n2. ⁠Cek setiap jalur kabel setiap 3 bulan sekali, guna memastikan tidak ada yang terputus",
     link: "/product/detail/2",
   },
   {
@@ -44,7 +44,7 @@ export const dataProduct = [
     harga: "Rp 4.500.000",
     spesifikasi: "Ukuran: 18x28x10 cm, Berat: 1.2 kg, Kapasitas: 200 bunga",
     panduan:
-      "1. Pasang sensor di dalam rumah kaca.\n2. Hubungkan dengan pengendali iklim.\n3. Pantau kondisi melalui aplikasi monitoring.",
+      "1. Cek setiap sensor setiap 2 bulan sekali, bersihkan jika ada kotoran jika ada.\n2. ⁠Cek setiap jalur kabel setiap 3 bulan sekali, guna memastikan tidak ada yang terputus",
     link: "/product/detail/3",
   },
   {
@@ -58,21 +58,21 @@ export const dataProduct = [
     harga: "Rp 10.000.000",
     spesifikasi: "Ukuran: 30x40x15 cm, Berat: 3 kg, Kapasitas: 500 tanaman",
     panduan:
-      "1. Pasang panel surya di tempat yang terkena sinar matahari langsung.\n2. Hubungkan sensor cuaca dan drone pemantau.\n3. Gunakan sistem irigasi pintar untuk mengatur penyiraman.",
+      "1. Cek setiap sensor setiap 2 bulan sekali, bersihkan jika ada kotoran jika ada.\n2. ⁠Cek setiap jalur kabel setiap 3 bulan sekali, guna memastikan tidak ada yang terputus",
     link: "/product/detail/4",
   },
   {
     id: 5,
     imgProduct: ImgTanamanHias,
     title: "IoT Tanaman Hias",
-    text: "Tidak hanya pemanfaatan lahan terbuka, IO Tandur dapat diterapkan untuk tanaman hias maupun ruangan tertutup untuk menghindari risiko dari beberapa faktor penghambat pertumbuhan tanaman.",
+    text: "Tidak hanya pemanfaatan lahan terbuka, IoTandur dapat diterapkan untuk tanaman hias maupun ruangan tertutup untuk menghindari risiko dari beberapa faktor penghambat pertumbuhan tanaman.",
     desc: "IoT Tanaman Hias memungkinkan pemantauan dan perawatan tanaman hias dalam ruangan dengan mudah. Sistem ini membantu menjaga kondisi optimal untuk tanaman hias, memastikan pertumbuhan yang sehat dan estetika yang indah.",
     komponen:
       "Sensor cahaya, Sistem penyiraman otomatis, Aplikasi pengingat perawatan, Modul IoT",
     harga: "Rp 3.000.000",
     spesifikasi: "Ukuran: 15x25x8 cm, Berat: 1 kg, Kapasitas: 30 tanaman",
     panduan:
-      "1. Tempatkan sensor cahaya di dekat tanaman.\n2. Instal sistem penyiraman otomatis.\n3. Gunakan aplikasi untuk mengatur jadwal penyiraman.",
+      "1. Cek setiap sensor setiap 2 bulan sekali, bersihkan jika ada kotoran jika ada.\n2. ⁠Cek setiap jalur kabel setiap 3 bulan sekali, guna memastikan tidak ada yang terputus",
     link: "/product/detail/5",
   },
 ];

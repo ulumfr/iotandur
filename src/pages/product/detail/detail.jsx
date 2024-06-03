@@ -53,7 +53,7 @@ const ProductDetailPage = () => {
                 </p>
                 <p className="mt-4 text-textHitam">{product.desc}</p>
                 <h2 className="text-ijoTua text-2xl font-bold mt-6">
-                  Panduan Penggunaan
+                  Petunjuk Maintenance
                 </h2>
                 <div className="mt-2 text-textHitam">
                   {product.panduan.split("\n").map((line, index) => (
