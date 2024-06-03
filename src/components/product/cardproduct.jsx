@@ -5,12 +5,16 @@ const CardProduct = ({ imgProduct, title, text, reverse, link }) => {
   const navigate = useNavigate();
 
   return (
-    <div className={`flex gap-8 ${reverse ? "flex-row-reverse" : ""}`}>
+    <div
+      className={`flex flex-col md:flex-row gap-8 ${
+        reverse ? "md:flex-row-reverse" : ""
+      }`}
+    >
       <img
         src={imgProduct}
         alt="img"
         draggable="false"
-        className="w-[400px] h-[300px] rounded-2xl"
+        className="md:w-[400px] md:h-[300px] rounded-2xl"
       />
       <div
         className={`flex flex-col bg-cream2 px-[33px] py-6 rounded-[25px] justify-between ${

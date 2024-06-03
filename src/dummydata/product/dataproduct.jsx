@@ -10,9 +10,13 @@ export const dataProduct = [
     imgProduct: ImgSayur,
     title: "IoT Sayur",
     text: "Penerapan alat IoT dalam memaksimalkan lahan pertanian sayuran guna menunjang produksi yang maksimal dan efisiensi hasil. Dengan pemanfaatan lahan terbuka maupun lahan tertutup.",
-    desc: "",
-    komponen: "",
-    harga: "",
+    desc: "IoT Sayur memberikan solusi untuk memantau kondisi lahan dan tanaman secara real-time, mengurangi penggunaan air dan pestisida dengan efisiensi yang lebih tinggi. Produk ini dirancang untuk membantu petani meningkatkan hasil panen dan kualitas sayuran.",
+    komponen:
+      "Sensor kelembaban tanah, Sensor suhu, Modul IoT, Aplikasi mobile",
+    harga: "Rp 5.000.000",
+    spesifikasi: "Ukuran: 20x30x10 cm, Berat: 1.5 kg, Kapasitas: 50 tanaman",
+    panduan:
+      "1. Pasang sensor pada lahan.\n2. Hubungkan dengan aplikasi mobile.\n3. Pantau kondisi tanaman melalui aplikasi.",
     link: "/product/detail/1",
   },
   {
@@ -20,9 +24,13 @@ export const dataProduct = [
     imgProduct: ImgBuah,
     title: "IoT Buah",
     text: "Dalam pemanfaatan lahan pertanian buah-buahan yang maksimal dengan menggunakan aplikasi perantara untuk menunjang pemantauan mulai dari bibit sampai dengan panen buah yang maksimal.",
-    desc: "",
-    komponen: "",
-    harga: "",
+    desc: "IoT Buah membantu petani dalam memantau perkembangan buah dari fase bibit hingga panen. Dengan pemantauan berkelanjutan, petani dapat memastikan bahwa buah tumbuh dalam kondisi optimal, meningkatkan hasil panen dan kualitas buah.",
+    komponen:
+      "Sensor kelembaban udara, Kamera pemantau, Sistem irigasi otomatis, Aplikasi analitik",
+    harga: "Rp 6.000.000",
+    spesifikasi: "Ukuran: 25x35x12 cm, Berat: 2 kg, Kapasitas: 100 tanaman",
+    panduan:
+      "1. Tempatkan kamera pemantau di kebun.\n2. Instal aplikasi analitik di smartphone.\n3. Monitor perkembangan buah secara real-time.",
     link: "/product/detail/2",
   },
   {
@@ -30,19 +38,27 @@ export const dataProduct = [
     imgProduct: ImgBunga,
     title: "IoT Bunga",
     text: "Tidak hanya untuk sayur dan buah, namun penerapan IoT untuk pembibitan bunga dapat diterapkan dengan lahan tertutup guna menghindari hama dan mudahnya kontrol penuh terhadap petani.",
-    desc: "",
-    komponen: "",
-    harga: "",
+    desc: "IoT Bunga memungkinkan kontrol yang presisi terhadap kondisi pertumbuhan bunga di dalam rumah kaca. Dengan teknologi ini, petani dapat menjaga kelembaban, suhu, dan pencahayaan yang ideal untuk pertumbuhan bunga yang optimal.",
+    komponen:
+      "Sensor kelembaban, Sensor cahaya, Pengendali iklim, Aplikasi monitoring",
+    harga: "Rp 4.500.000",
+    spesifikasi: "Ukuran: 18x28x10 cm, Berat: 1.2 kg, Kapasitas: 200 bunga",
+    panduan:
+      "1. Pasang sensor di dalam rumah kaca.\n2. Hubungkan dengan pengendali iklim.\n3. Pantau kondisi melalui aplikasi monitoring.",
     link: "/product/detail/3",
   },
   {
     id: 4,
     imgProduct: ImgGatau,
-    title: "IoT Buah",
-    text: "Dalam pemanfaatan lahan pertanian buah-buahan yang maksimal dengan menggunakan aplikasi perantara untuk menunjang pemantauan mulai dari bibit sampai dengan panen buah yang maksimal.",
-    desc: "",
-    komponen: "",
-    harga: "",
+    title: "IoT Outdoor",
+    text: "Dalam pemanfaatan lahan terbuka diperlukan alat yang memadai dan cukup besar guna menunjang lahan yang luas dan pemanfaatan sinar matahari yang melimpah.",
+    desc: "IoT Outdoor dirancang untuk lahan terbuka yang luas, memanfaatkan sinar matahari dan teknologi canggih untuk memantau dan mengelola kondisi pertanian secara efisien. Produk ini sangat ideal untuk petani yang mengelola lahan besar.",
+    komponen:
+      "Panel surya, Sensor cuaca, Drone pemantau, Sistem irigasi pintar",
+    harga: "Rp 10.000.000",
+    spesifikasi: "Ukuran: 30x40x15 cm, Berat: 3 kg, Kapasitas: 500 tanaman",
+    panduan:
+      "1. Pasang panel surya di tempat yang terkena sinar matahari langsung.\n2. Hubungkan sensor cuaca dan drone pemantau.\n3. Gunakan sistem irigasi pintar untuk mengatur penyiraman.",
     link: "/product/detail/4",
   },
   {
@@ -50,9 +66,13 @@ export const dataProduct = [
     imgProduct: ImgTanamanHias,
     title: "IoT Tanaman Hias",
     text: "Tidak hanya pemanfaatan lahan terbuka, IO Tandur dapat diterapkan untuk tanaman hias maupun ruangan tertutup untuk menghindari risiko dari beberapa faktor penghambat pertumbuhan tanaman.",
-    desc: "",
-    komponen: "",
-    harga: "",
+    desc: "IoT Tanaman Hias memungkinkan pemantauan dan perawatan tanaman hias dalam ruangan dengan mudah. Sistem ini membantu menjaga kondisi optimal untuk tanaman hias, memastikan pertumbuhan yang sehat dan estetika yang indah.",
+    komponen:
+      "Sensor cahaya, Sistem penyiraman otomatis, Aplikasi pengingat perawatan, Modul IoT",
+    harga: "Rp 3.000.000",
+    spesifikasi: "Ukuran: 15x25x8 cm, Berat: 1 kg, Kapasitas: 30 tanaman",
+    panduan:
+      "1. Tempatkan sensor cahaya di dekat tanaman.\n2. Instal sistem penyiraman otomatis.\n3. Gunakan aplikasi untuk mengatur jadwal penyiraman.",
     link: "/product/detail/5",
   },
 ];

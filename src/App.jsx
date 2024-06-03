@@ -77,7 +77,7 @@ function App() {
             </DefaultLayout>
           }
         />
-        <Route path="/product/transaction/" element={<TransactionPage />} />
+        <Route path="/product/transaction/:id" element={<TransactionPage />} />
       </Routes>
     </>
   );
