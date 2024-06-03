@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { dataProduct } from "../../../dummydata/product/dataproduct";
 import { useNavigate, useParams } from "react-router-dom";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
@@ -20,8 +20,17 @@ const ProductDetailPage = () => {
     );
   }
 
+  const [isLoggedIn, setIsLoggedIn] = useState(() => {
+    const storedIsLoggedIn = localStorage.getItem("isLogin");
+    return storedIsLoggedIn === "true";
+  });
+
   const handleOrderClick = () => {
-    navigate(`/product/transaction/${id}`);
+    if (isLoggedIn) {
+      navigate(`/product/transaction/${id}`);
+    } else {
+      navigate("/auth/login");
+    }
   };
 
   return (
