@@ -105,7 +105,7 @@ const AboutPage = () => {
       </div>
 
       <div className="grid md:grid-cols-2 gap-10 mx-[50px] md:mx-[150px] my-20">
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 my-auto">
           <h1 className="text-ijoTua font-semibold text-3xl">Contact Us</h1>
           <p className="text-textLabel">
             Jika Anda memiliki pertanyaan atau masukan, jangan ragu untuk

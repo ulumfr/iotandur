@@ -6,16 +6,11 @@ export const dataNav = [
   },
   {
     id: 2,
-    name: "Penawaran",
-    linkMenu: "/penawaran",
-  },
-  {
-    id: 3,
     name: "Produk",
     linkMenu: "/product",
   },
   {
-    id: 4,
+    id: 3,
     name: "Tentang Kami",
     linkMenu: "/about",
   },

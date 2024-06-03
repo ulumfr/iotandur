@@ -61,8 +61,22 @@ function App() {
           <Route path="reset" element={<ResetPage />} />
         </Route>
 
-        <Route path="/product" element={<ProductPage />} />
-        <Route path="/product/detail" element={<ProductDetailPage />} />
+        <Route
+          path="/product"
+          element={
+            <DefaultLayout>
+              <ProductPage />
+            </DefaultLayout>
+          }
+        />
+        <Route
+          path="/product/detail/:id"
+          element={
+            <DefaultLayout>
+              <ProductDetailPage />
+            </DefaultLayout>
+          }
+        />
         <Route path="/product/transaction/" element={<TransactionPage />} />
       </Routes>
     </>

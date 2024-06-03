@@ -37,10 +37,7 @@ const Footer = () => {
               />
               <FooterMenu
                 title="Layanan"
-                links={[
-                  { name: "Penawaran", path: "/penawaran" },
-                  { name: "Produk", path: "/product" },
-                ]}
+                links={[{ name: "Produk", path: "/product" }]}
               />
             </div>
           </div>

@@ -62,7 +62,7 @@ const NavBar = () => {
               <img src={Logo} alt="logo" draggable="false" className="h-6" />
             </Link>
             <div className="hidden md:block pr-10">
-              <ul className="flex space-x-3">
+              <ul className="flex space-x-6">
                 {dataNav.map(({ name, linkMenu }) => (
                   <div key={name}>
                     <NavLink to={linkMenu}>
@@ -131,7 +131,7 @@ const NavBar = () => {
         </div>
         {menu && (
           <div className="md:hidden">
-            <ul className="py-5 text-lg space-y-3">
+            <ul className="py-5 text-lg space-y-6">
               {dataNav.map(({ name, linkMenu }) => (
                 <div key={name}>
                   <NavLink to={linkMenu}>
