@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import Hero from "../../../assets/img/gambar/hero.png";
 import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
   const navigate = useNavigate();
+
+  const [isLoggedIn, setIsLoggedIn] = useState(() => {
+    const storedIsLoggedIn = localStorage.getItem("isLogin");
+    return storedIsLoggedIn === "true";
+  });
+
+  const handleStart = () => {
+    if (isLoggedIn) {
+      navigate("/product");
+    } else {
+      navigate("/auth/login");
+    }
+  };
 
   return (
     <section id="hero" className="relative w-full h-screen">
@@ -27,7 +40,7 @@ const HeroSection = () => {
           </div>
           <button
             className="flex text-textCerah bg-ijoTua rounded-lg py-2 px-6 w-fit"
-            onClick={() => navigate("/auth/login")}
+            onClick={handleStart}
           >
             Mulai Sekarang
           </button>
